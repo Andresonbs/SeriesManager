@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.ifsp.seriesmanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SeriesManager">
+        <activity
+            android:name=".view.episodios.EpisodioFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.episodios.EpisodiosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.temporada.TemporadaFormActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.temporada.TemporadaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.serie.SerieActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.serie.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
